@@ -6,6 +6,6 @@ class Hello
         int b = 20;
         int c = a + b;
         System.Console.WriteLine(c);
-        System.Console.WriteLine("Hello");
+        System.Console.WriteLine("THe sum is " +c);
     }
 }
