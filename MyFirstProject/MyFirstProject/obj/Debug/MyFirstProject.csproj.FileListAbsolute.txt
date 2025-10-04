@@ -1,0 +1,8 @@
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.exe.config
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.exe
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.pdb
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.csproj.AssemblyReference.cache
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.exe
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.pdb
+E:\Visual Studio 2022\dotnet\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.exe.config
