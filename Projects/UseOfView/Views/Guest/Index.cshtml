@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Use of ViewBag, ViewData and TempData</h1>
+<div>@ViewBag.a</div>
+<div>@ViewData["b"]</div>
+<div>@TempData["c"]</div>
+<div>Index</div>
+@{
+    int result = @ViewBag.a + 1;
+    int result1 = (int)@ViewData["b"];
+    int sum = result1 + 10;
+    int result2 = (int)TempData["c"] + 100020;
+    
+}
+<h1> After updating</h1>
+<div> @result</div>
+<div>@sum</div>
+<div>@result2</div>
+div
