@@ -22,6 +22,14 @@ namespace Model_Validation.Controllers
         public IActionResult Index(Student std)
         {
             return View();
+            //if(ModelState.IsValid)
+            //{
+            //    return "Name is" +std.Name;
+            //}
+            //else
+            //{
+            //    return "Validation Failed";
+            //}
         }
 
         public IActionResult Privacy()
