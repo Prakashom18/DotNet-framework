@@ -9,7 +9,12 @@ namespace Model_Validation.Models
      
         public string Name { get; set; }
 
-        [Required]
-        public string Age { get; set; }
+        [Required(ErrorMessage ="Age is required")]
+
+        public int Age { get; set; }
+
+        [Required(ErrorMessage ="Email is Required")]
+        public string Email { get; set; }
+
     }
 }
