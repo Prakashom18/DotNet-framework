@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model RegularExpression.Models.Student;
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
@@ -10,7 +11,23 @@
     <div class="row">
         <div class="col-sm-4">
             <form asp-controller="Home" asp-action="Index" method="post">
-                <in
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" style="color:red">
+                </span>
+                <br/>
+                <input asp-for="Password" class="form-control" />
+                
+                <span asp-validation-for="Password" style="color:red">
+
+
+                </span>
+
+
+
+                
+
+
+
             </form>
         </div>
     </div>
