@@ -8,6 +8,7 @@ namespace RegularExpression.Models
         //[RegularExpression=]
         public string Email { get; set; }
 
+        [Required(ErrorMessage ="Pass is must")]
         public string Password { get; set; }
       
 
