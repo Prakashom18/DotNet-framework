@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .error { color: red; }
+        input { display: block; margin: 10px 0; padding: 5px; width: 250px; }
+        button { padding: 7px 15px; }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span class="error" id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            let isValid = true;
+
+            // Clear previous errors
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("passwordError").innerText = "";
+
+            // Name validation
+            let name = document.getElementById("name").value;
+            if (name.trim() === "") {
+                document.getElementById("nameError").innerText = "Name empty";
+                isValid = false;
+            }
+
+            // Email empty OR invalid
+            let email = document.getElementById("email").value;
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (email.trim() === "") {
+                document.getElementById("emailError").innerText = "Email empty";
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid Email";
+                isValid = false;
+            }
+
+            // Password validation
+            let password = document.getElementById("password").value;
+            if (password.trim() === "") {
+                document.getElementById("passwordError").innerText = "Password empty";
+                isValid = false;
+            } else if (password.length < 6) {
+                document.getElementById("passwordError").innerText = "Too short password";
+                isValid = false;
+            }
+
+            // Prevent form submission if invalid
+            if (!isValid) {
+                event.preventDefault();
+            } else {
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+
+</body>
+</html>
