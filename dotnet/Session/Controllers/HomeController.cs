@@ -23,6 +23,10 @@ namespace Session.Controllers
         }
         public IActionResult Get()
         {
+            if(HttpContext.Session.GetString("mykey")!=null)
+            {
+                ViewBag.Data = HttpContext.Session.GetString("mykey").ToString();
+            }
             return View();
         }
         public IActionResult Privacy()
