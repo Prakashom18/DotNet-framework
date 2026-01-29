@@ -53,5 +53,27 @@ class Employee
     }
 }
 
+class Program
+{
+    static void Main()
+    {
+        // (e & f) Create object e1 using constructor
+        Employee e1 = new Employee("Joh", "Rat", 50000);
 
+        // (g) Display Full Name and Salary using properties
+        Console.WriteLine("Using properties:");
+        Console.WriteLine("Full Name: " + e1.FullName);
+        Console.WriteLine("Salary: " + e1.Salary);
+
+        // (h) Change First Name
+        e1.FirstName = "Mike";
+
+        // (i) Increment salary by 10%
+        e1.IncrementSalary(10);
+
+        // (j) Display Full Name and Salary using Display method
+        Console.WriteLine("\nAfter update:");
+        e1.Display();
+    }
 }
+
